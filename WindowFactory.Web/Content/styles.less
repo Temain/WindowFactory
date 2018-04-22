@@ -1,0 +1,189 @@
+﻿@import "bootstrap/bootstrap.less";
+@import "variables.less";
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../Fonts/google/open-sans-light.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url("../Fonts/google/open-sans.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url("../Fonts/google/open-sans-semibold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../Fonts/google/open-sans-bold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local("Open Sans Light Italic"), local("OpenSansLight-Italic"), url("../Fonts/google/open-sans-light-italic.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local("Open Sans Italic"), local("OpenSans-Italic"), url("../Fonts/google/open-sans-italic.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local("Open Sans Semibold Italic"), local("OpenSans-SemiboldItalic"), url("../Fonts/google/open-sans-semibold-italic.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url("../Fonts/google/open-sans-bold-italic.woff") format("woff");
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+.form-control {
+	box-shadow: none;
+}
+
+.form-control-feedback {
+    position: relative;
+    /* top: 0; */
+    /* right: 0; */
+    z-index: 2;
+    display: inline-block; 
+    width: 31px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    pointer-events: none;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+
+	.wrapper {
+		padding: 0 0 50px 0;
+
+        .brand {
+            color: #7e7e7e;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .heading {
+			height: 40px;
+			margin: 30px 0 10px 0;
+			padding-left: 20px;
+
+			h1 {
+				display: inline-block;
+				color: #7e7e7e;
+				font: normal 40px/40px 'Oswald', sans-serif;
+				margin: 0;
+				padding: 0 10px;
+				text-transform: uppercase;
+			}
+
+            h2 {
+                display: inline-block;
+                margin-left: 0.4em;
+                margin-top: 0;
+            }
+
+            .search {
+                width: 200px;
+                float: right;
+            }
+		}
+	}
+
+	header {
+		padding: 20px 0;
+	}
+}
+
+.highcharts-container{width:100% !important; height:100% !important;}
+
+.main-menu > .nav {
+    display: table;
+    width: 100%;
+
+    li {
+        display: table-cell;
+        text-align: center;
+        white-space: nowrap;
+        float: none;
+
+        a {
+            font-size: 1.1em;
+
+            i {
+                font-size: 1.1em;
+                /*color: black;*/
+            }
+        }
+    }
+
+    /*li.active > a > i {
+        color: white
+    }*/
+}
+
+.login-partial {
+    margin-right: 0;
+
+    li {
+        a:hover {
+            background: none;
+        }
+    }
+} 
+
+.back-link {
+    display: inline-block;
+    font-size: 1.7em;
+}
+
+.create-link {
+    font-size: 1.1em;
+    margin-left: 1em;
+
+    i {
+        font-size: 1.2em;
+    }
+}
+
+.download-link {
+    display: block;
+    margin-left: 0.8em;
+
+    font-size: 1.1em;
+
+    i {
+        font-size: 1.2em;
+    }
+}
+
+.actions > a {
+    font-size: 1.2em;
+}
+
+.input-group-addon > i {
+    font-style: normal;
+}

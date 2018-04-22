@@ -1,0 +1,27 @@
+﻿html, body {
+    font-family: 'Roboto', sans-serif;
+    /*font-size: 100%;
+    overflow-x: hidden;
+    background: #f4f7f9;*/
+}
+
+.search-field {
+    width: 15em;
+    display: inline !important;
+    float: right;
+    margin-top: 0.8em;
+    font-family: 'Roboto', sans-serif;
+}
+
+#forms-example {
+    display: inline !important;
+}
+
+.control-label {
+    font-weight: 400 !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+input {
+    font-family: 'Roboto', sans-serif !important;
+}

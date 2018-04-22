@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <!--Пример подключения калькулятора окон на произвольной странице-->
+	
+	<title>Расчет стоимости окон онлайн</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!--Пользовательские стили калькулятора. Если css не задан, будут использованы стили по умолчанию-->
+    <!--<link href="http://your-domain.ru/path-to-css/calc.css" rel="stylesheet">-->
+    <!--или, если путь относительный-->
+    <link href="css/calc.css" rel="stylesheet">
+    <!--ВАЖНО: путь к файлу стилей (если он задан) нужно продублировать в переменной $lwc.css файла lwc-design.js-->
+
+    <!--Пользовательский дизайн калькулятора. Если не задан, будет использован дизайн по умолчанию-->
+    <!--Здесь же, задаются доступные системы профилей, особенности стеклопакетов и фурнитуры-->
+    <!--<script src="http://your-domain.ru/path-to-js/lwc-design.js"></script>-->
+    <!--или, если путь относительный-->
+    <script src="js/lwc-design-user-css-sill-list.js"></script>
+
+    <!--Прайс калькулятора. Если не задан, будет использован прайс по умолчанию-->
+    <!--<script src="http://your-domain.ru/path-to-js/lwc-price.js"></script>-->
+    <!--или, если путь относительный-->
+    <script src="js/lwc-price-sill-list.js"></script>
+
+    <!--Основной скрипт калькулятора-->
+	<script src="http://www.oknosoft.ru/lightcalc/js/lightcalc.js"></script>
+	
+	
+</head>
+<body>
+
+
+<!--описакние порядка встраивания калькулятора-->
+<h1 style="margin: 0; padding: 0; font: bold 16px/18px verdana,helvetica,sans-serif;">Подключение калькулятора к html странице</h1>
+<p style="margin: 0; padding: 0; font:normal normal 12px/14px verdana,helvetica,sans-serif;">Для подключения калькулятора, поместите в произвольном месте раздела <code style="color: darkblue;">&lt;body&gt;</code> элемент с html кодом:<br/>
+<code style="color: darkblue;">
+    &lt;div id="lwcdiv"&gt;&lt;/div&gt;
+</code> - в этом элементе будет размещен калькулятор.<br/>
+    В разделе <code style="color: darkblue;">&lt;head&gt;</code> нужно инициализировать скрипт калькулятора. В простойшем случае, это можно сделать одной строкой:<br/>
+    <code style="color: darkblue;">&lt;script src="http://www.oknosoft.ru/lightcalc/js/lightcalc.js"&gt;&lt;/script&gt;</code>
+
+</p>
+
+
+<!--Произвольный текст с произвольным дизайном, расположенный выше калькулятора-->
+<p style="font:normal normal 12px/14px verdana,helvetica,sans-serif;">Произвольный текст с произвольным дизайном, расположенный перед калькулятором</p>
+
+
+
+<!--В этом элементе управления будет размещен калькулятор-->
+<!--Если изменяете имя id="lwcdiv", новое имя нужно указать в файле lwc-design.js-->
+<!--Если div не создавать, скрипт добавит новый элемент и поместит его в конце страницы-->
+<div id="lwcdiv">
+
+</div>
+
+
+<!--Произвольный текст с произвольным дизайном, расположенный ниже калькулятора-->
+<p style="font:normal normal 12px/14px verdana,helvetica,sans-serif;">Произвольный текст с произвольным дизайном, расположенный после калькулятора</p>
+
+<p>
+Вопросы можно задать по email <a href="mailto:info@oknosoft.ru?Subject=wincalconline">info@oknosoft.ru</a> или через форму обратной связи <a href="http://www.oknosoft.ru/feedback">www.oknosoft.ru/feedback</a>
+</p>
+
+</body>
+</html>

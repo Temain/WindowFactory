@@ -1,0 +1,37 @@
+﻿<!-- ko with: reports -->
+@*<div class="heading">
+    <h2>Отчёты</h2>
+    
+    <a class="download-link" href="@Url.Action("SalesReport", "Report")"><i class="fa fa-download" aria-hidden="true"></i> Скачать отчет о продажах</a>
+</div>*@
+
+<div class="grid-form">
+    <div class="grid-form1">
+        <h3 id="forms-example" class="">Аналитика</h3>
+        @*<div class="row">
+                <section class="col-md-24">
+                    <div id="chart" style="width: 100%; height: 350px;"></div>
+                </section>
+            </div>*@
+
+        <!--//grid-->
+        <div class="graph">
+            <div class="graph-grid">
+                <div class="col-md-6 graph-1">
+                    <div class="grid-1">
+                        <h4>Объём заказов, 2018г.</h4>
+                        <canvas id="bar1" height="300" width="500" style="width: 500px; height: 300px;"></canvas>
+                    </div>
+                </div>
+                <div class="col-md-6 graph-2">
+                    <div class="grid-1">
+                        <h4>Количество за неделю</h4>
+                        <canvas id="line1" height="300" width="500" style="width: 500px; height: 300px;"></canvas>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /ko -->
